@@ -14,7 +14,14 @@ app_license = "MIT"
 # Includes in <head>
 # ------------------
 #fixtures = ["Custom Field", "Custom Script", "Property Setter"]
-fixtures = ["Customer"]
+fixtures = [{
+		"doctype": "DocType",
+                "filters": { "custom" : ["=", "1"] }
+               }, 
+        	"Custom Field",
+        	"Custom Script",
+        	"Property Setter"
+           ]
 # include js, css files in header of desk.html
 # app_include_css = "/assets/setup_ke/css/setup_ke.css"
 # app_include_js = "/assets/setup_ke/js/setup_ke.js"
